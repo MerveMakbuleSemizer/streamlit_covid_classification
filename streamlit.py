@@ -13,7 +13,7 @@ st.markdown("This website was created to predict whether a patient will succumb 
 st.image("http://basiskele.meb.gov.tr/meb_iys_dosyalar/2020_08/06012704_842020140246coronavirus.jpg")
 
 st.header("Metadata")
-df = pd.read_csv("Covid Data.csv")
+# df = pd.read_csv("Covid Data.csv")
 # st.table(df.sample(5, random_state=42))
 st.markdown("[The dataset](https://datos.gob.mx/busca/dataset/informacion-referente-a-casos-covid-19-en-mexico) was provided by the Mexican government. This dataset contains an enormous number of anonymized patient-related information including pre-conditions. The raw dataset consists of 21 unique features and 1,048,576 unique patients.") 
 st.markdown("**- sex:** of the patient")
