@@ -93,6 +93,7 @@ input_df = pd.DataFrame({
 input_df.SEX_M = input_df.SEX_M.replace(["Female","Male"],[0,1])
 input_df["age_new"] = [1 if 0 <= age & age <= 40 else (2 if 41 <= age & age <= 80 else 3) for age in input_df.age_new]
 input_df.PATIENT_TYPE_1 = input_df.PATIENT_TYPE_1.replace(["Returned Home","Hospitalization"],[1,0])
+input_df.USMER_2 = input_df.USMER_2.replace([1,2],[0,1])
 input_df = input_df.replace([True,False],[1,0])
 
 # input_df = pd.get_dummies(input_df,columns = ["usmer","sex","patient_type","pneumonia","pregnant","diabetes","copd","asthma","inmsupr","hipertension","other_disease","cardiovascular","obesity","renal_chronic","tobacco","classification"],drop_first = True)
