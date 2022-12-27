@@ -67,7 +67,7 @@ classification = st.sidebar.checkbox("PCR Test Positive")
 
 import joblib
 
-model = joblib.load('decision_tree_oversampling.pkl')
+model = joblib.load('decision_tree_oversampling1.pkl')
 
 
 input_df = pd.DataFrame({
